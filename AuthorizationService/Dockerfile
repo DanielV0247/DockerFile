@@ -1,7 +1,7 @@
-FROM openjdk:11-jdk-alpine
+FROM openjdk:21-jdk-alpine
 
 EXPOSE 8080
 
-ADD build/libs/AuthorizationService-0.0.1-SNAPSHOT.jar aap.jar
+ADD build/libs/AuthorizationService-0.0.1-SNAPSHOT.jar app.jar
 
 CMD["java", "-jar", "/app.jar"]
